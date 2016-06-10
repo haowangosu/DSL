@@ -159,10 +159,10 @@ output "result.csv" delc\\
  \item  Multiple data source:
 Table 1 has more important domain information, for future usage, we need to combine them together. Join operator can help us in this part. In this process, we can have other minor operators like filter, finally we can output the dataset which we want.\\
 In here, after the three steps we shows above, we can use join operator in here to join two tables:\\
-4. join two tables:\\
+ join two tables:\\
 let j = joinForKey[(dset1,1), (dset2,1)]\\
 output "joinresult.csv" j\\
-Such that, the result is:\\
+Such that, we can get the result dataset which contains data from two dataset. \\
 \begin{table}[h!]
   \centering
   \caption{2016-2-8.biz domin registration informtion in Australia (part 1).}
