@@ -70,7 +70,7 @@ deleteRow is s = deleteRow (tail (reverse (sort is))) (deleteRow1 (head (reverse
 
 
 
---[], ["",""] （null x 产生的["",""]）这两种是emptylist, null [] = True, null ["",""]=False
+--[], ["",""] （null x generate["",""]）these two are emptylist, null [] = True, null ["",""]=False
 isEmptyList :: [D] -> Bool
 isEmptyList []     = True
 isEmptyList (x:xs) = if null x then isEmptyList xs else False
