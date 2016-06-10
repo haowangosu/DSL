@@ -313,9 +313,11 @@ sample = do
 
 
 
-\section{Implementation Strategy}
+\section{Design Decisions}
 
 This DSL only use shallow embedding. which can make the function more clear to understand, if later users want to update our basic functions, they can easily change it. Also, because the data type we define is very easy, and we don't need deep embedding here. \\
+To make our DSL usable in real world issues, we use IO manad and IO functions researved in Haskell prelude module as described before, and define our own input and output function to read from files and write to files.
+
 \section{Related DSLs}
 In the paper "Declarative Data Cleaning Language, Model, and Algorithm", the author introduce their DSL, which implement by Java, and also define operators like update, join (merge), search (view)...This gives us idea about how to design our operators.
 
